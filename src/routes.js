@@ -1,7 +1,7 @@
 const routes = require('express').Router()
 const userController = require('./controller/services/userController')
 
-routes.get("/login", userController.dogla)
+routes.get("/login", userController.loginUser)
 
 routes.get("/Menu",(req,res)=>{
 
