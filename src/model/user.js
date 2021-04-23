@@ -16,6 +16,9 @@ const UserSchema = new Schema({
     senha :{
         type: String,
         required: true
+    },
+    valor_em_conta :{
+        type:Number
     }
     
 })

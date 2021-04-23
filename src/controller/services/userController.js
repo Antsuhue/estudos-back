@@ -16,7 +16,7 @@ async function loginUser(req,res) {
         if(verifica_senha){
             const chave = usuario_encontrado.cpfcnpj
             const token = jwt.sign({chave}, process.env.SECRET,{
-                expiresIn: 3600
+                expiresIn: 7200
             })
             return res.status(200).json({status:"Login efetuado!",
         token:token})
@@ -45,7 +45,8 @@ async function create_user(req,res){
         name:data.nome_cliente,
         cpfcnpj:data.cpfcnpj,
         email:data.email,
-        senha:hash
+        senha:hash,
+        valor_em_conta:0.00
     })
     return res.status(200).json({"status":"usuario criado!"})
     } 
