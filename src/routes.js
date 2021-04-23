@@ -14,4 +14,6 @@ routes.post("/create-user", userController.create_user)
 
 routes.put("/deposit", bankController.depositarDinheiro)
 
+routes.get("/balance", bankController.verificar_saldo)
+
 module.exports = routes
