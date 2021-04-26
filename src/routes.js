@@ -16,4 +16,6 @@ routes.put("/deposit", bankController.depositarDinheiro)
 
 routes.get("/balance", bankController.verificar_saldo)
 
+routes.put("/transfer-money", bankController.transferir_dinheiro)
+
 module.exports = routes
