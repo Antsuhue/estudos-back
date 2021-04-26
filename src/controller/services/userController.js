@@ -46,7 +46,7 @@ async function create_user(req,res){
         cpfcnpj:data.cpfcnpj,
         email:data.email,
         senha:hash,
-        valor_em_conta:0.00
+        valor_em_conta:0
     })
     return res.status(200).json({"status":"usuario criado!"})
     } 
