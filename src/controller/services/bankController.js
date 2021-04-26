@@ -4,7 +4,7 @@ function depositarDinheiro (req,res){
 
     const t = req.headers.token
 
-    
+    console.log(t);
     
 
     return res.status(200).json({status:"valor depositado"})
