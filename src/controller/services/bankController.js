@@ -26,4 +26,8 @@ async function verificar_saldo(req,res){
     return res.status(200).json({saldo:user_account.valor_em_conta})
 }
 
-module.exports = { depositarDinheiro, verificar_saldo }
+function transferir_dinheiro(req,res){
+    
+}
+
+module.exports = { depositarDinheiro, verificar_saldo, transferir_dinheiro }
