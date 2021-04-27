@@ -24,6 +24,7 @@ async function loginUser(req,res) {
 
         return res.status(400).json({status:"CPF/CNPJ ou senha incorretos!"})
     }
+    return res.status(400).json({status:"usuario não existente!"})
 }
 
 async function create_user(req,res){
